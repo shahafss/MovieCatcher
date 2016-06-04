@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/metalgreybackground">
+
+
+<TextView
+    android:layout_width="match_parent"
+    
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Title:"
+    android:id="@+id/titleTextView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="#5c5c5c"
+    android:textAlignment="center"
+    android:textColor="#ffca45" />
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="25dp"
+    android:id="@+id/editTitleText"
+    android:textColor="#ffffff"
+    android:layout_below="@+id/titleTextView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="#2f2f2f" />
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Plot:"
+    android:id="@+id/plotTextView"
+    android:layout_below="@+id/editTitleText"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="#5c5c5c"
+    android:textColor="#ffca45" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:id="@+id/editPlotText"
+    android:layout_below="@+id/plotTextView"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:textColor="#ffffff"
+    android:background="#2f2f2f" />
+
+<TextView
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Poster:"
+    android:id="@+id/posterUrltextView"
+    android:background="#5c5c5c"
+    android:textColor="#ffca45"
+    android:layout_below="@+id/editRuntimeText"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_toLeftOf="@+id/posterImageView"
+    android:layout_toStartOf="@+id/posterImageView" />
+
+<EditText
+    android:hint="Poster URL"
+    android:layout_width="180dp"
+    android:layout_height="25dp"
+    android:id="@+id/posterUrlEditText"
+    android:textColor="#ffffff"
+    android:textColorHint="#5c5c5c"
+    android:background="#2f2f2f"
+    android:layout_below="@+id/posterUrltextView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/showPosterBtn"
+    android:layout_alignEnd="@+id/showPosterBtn"
+    android:layout_above="@+id/ratingBar" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="28dp"
+    android:layout_height="28dp"
+    android:id="@+id/showPosterBtn"
+    android:background="@drawable/reloadbutton"
+    android:layout_alignTop="@+id/posterUrltextView"
+    android:layout_alignRight="@+id/posterUrltextView"
+    android:layout_alignEnd="@+id/posterUrltextView" />
+
+<ImageView
+    android:layout_width="210dp"
+    android:layout_height="345dp"
+    android:id="@+id/posterImageView"
+    android:layout_below="@+id/editPlotText"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:id="@+id/editSavebtn"
+    android:background="@drawable/savebutton"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/editCancelBtn"
+    android:layout_toStartOf="@+id/editCancelBtn" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:id="@+id/editCancelBtn"
+    android:background="@drawable/cancelbutton"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/showPosterBtn"
+    android:layout_toStartOf="@+id/showPosterBtn" />
+
+<RatingBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ratingBar"
+    android:numStars="5"
+    android:stepSize="0.5"
+    android:rating="2.5"
+    android:progressTint="@color/newRedColor"
+    android:layout_alignBottom="@+id/editShareBtn"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<Button
+    android:layout_width="50dp"
+    android:layout_height="30dp"
+    android:id="@+id/editShareBtn"
+    android:background="@drawable/sharebutton"
+    android:layout_above="@+id/editCheckBox"
+    android:layout_centerHorizontal="true" />
+
+<TextView
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Genre:"
+    android:id="@+id/genreTextView"
+    android:layout_below="@+id/editPlotText"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="#5c5c5c"
+    android:textColor="#ffca45"
+    android:layout_alignRight="@+id/showPosterBtn"
+    android:layout_alignEnd="@+id/showPosterBtn" />
+
+<EditText
+    android:layout_width="180dp"
+    android:layout_height="25dp"
+    android:id="@+id/editGenreText"
+    android:layout_below="@+id/genreTextView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:textColor="#ffffff"
+    android:background="#2f2f2f"
+    android:layout_toStartOf="@+id/posterImageView"
+    android:layout_toLeftOf="@+id/posterImageView" />
+
+<TextView
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Released:"
+    android:id="@+id/releasedTextView"
+    android:background="#5c5c5c"
+    android:textColor="#ffca45"
+    android:layout_below="@+id/editGenreText"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_toLeftOf="@+id/posterImageView"
+    android:layout_toStartOf="@+id/posterImageView" />
+
+<EditText
+    android:layout_width="180dp"
+    android:layout_height="25dp"
+    android:id="@+id/editReleasedText"
+    android:textColor="#ffffff"
+    android:background="#2f2f2f"
+    android:layout_below="@+id/releasedTextView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_toLeftOf="@+id/posterImageView"
+    android:layout_toStartOf="@+id/posterImageView" />
+
+<TextView
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Runtime:"
+    android:id="@+id/runtimeTextView4"
+    android:background="#5c5c5c"
+    android:textColor="#ffca45"
+    android:layout_below="@+id/editReleasedText"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_toLeftOf="@+id/posterImageView"
+    android:layout_toStartOf="@+id/posterImageView" />
+
+<EditText
+    android:layout_width="180dp"
+    android:layout_height="25dp"
+    android:id="@+id/editRuntimeText"
+    android:textColor="#ffffff"
+    android:background="#2f2f2f"
+    android:layout_below="@+id/runtimeTextView4"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_toLeftOf="@+id/posterImageView"
+    android:layout_toStartOf="@+id/posterImageView" />
+
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Seen"
+    android:id="@+id/editCheckBox"
+    android:checked="false"
+    android:buttonTint="@color/newGreenColor"
+    android:textColor="#008cff"
+    android:textStyle="bold"
+    android:layout_alignBottom="@+id/posterImageView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>
+    </ScrollView>

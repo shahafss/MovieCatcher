@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shahaf.moviecatcher.SearchingActivity"
+    android:padding="10dp"
+    android:background="@drawable/metalgreybackground">
+
+
+
+
+    <EditText
+        android:hint="@string/search_name_et_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/SearchEditText"
+        android:textColorHint="#ffca45"
+        android:textColor="#ffca45"
+        android:background="#2f2f2f"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="25sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_btn_text"
+        android:id="@+id/searchBtn"
+        android:layout_below="@+id/SearchEditText"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/searchListView"
+        android:layout_below="@+id/searchBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_cancel_btn_text"
+        android:id="@+id/cancelSearchBtn"
+        android:layout_alignBottom="@+id/searchListView"
+        android:layout_alignRight="@+id/searchListView"
+        android:layout_alignEnd="@+id/searchListView" />
+
+    <ProgressBar
+        android:id="@+id/progBarSpinner"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false" />
+
+
+
+
+
+</RelativeLayout>

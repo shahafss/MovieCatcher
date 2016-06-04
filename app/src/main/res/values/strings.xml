@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MovieCatcher</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="edit_title_textview">Title:</string>
+    <string name="edit_plot_textview">Plot:</string>
+    <string name="edit_genre_texview">Genre:</string>
+    <string name="edit_released_textview">Released:</string>
+    <string name="edit_runtime_textview">Runtime:</string>
+    <string name="edit_poster_textview">Poster:</string>
+    <string name="edit_checkbox_text">Seen</string>
+    <string name="search_name_et_text">Movie name..</string>
+    <string name="search_btn_text">Search</string>
+    <string name="search_cancel_btn_text">Cancel</string>
+    <string name="mainline_checkbox_text">Seen</string>
+</resources>

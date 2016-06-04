@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.shahaf.moviecatcher.MainActivity">
+
+    <item
+        android:id="@+id/deleteList"
+        android:title="Delete list" />
+    <item
+        android:id="@+id/exitApp"
+        android:title="Exit" />
+
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/simpleframe"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="7dp">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:id="@+id/searchLineImg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/searchLineTitle"
+        android:layout_alignParentTop="true"
+        android:background="#982f2f2f"
+        android:textColor="#ffca45"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/searchLineImg"
+        android:layout_toEndOf="@+id/searchLineImg" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="New Textt"
+        android:id="@+id/searchLineYear"
+        android:layout_below="@+id/searchLineTitle"
+        android:layout_toRightOf="@+id/searchLineImg"
+        android:textColor="#ffca45"
+        android:background="#982f2f2f"
+        android:layout_alignRight="@+id/searchLineTitle"
+        android:layout_alignEnd="@+id/searchLineTitle" />
+
+</RelativeLayout>
